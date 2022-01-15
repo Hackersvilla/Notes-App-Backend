@@ -51,12 +51,5 @@ router.post('/delete', async function(req, res) {
 })
 
 
-
-//making for the notes route
-router.get('/',  function(req, res) {
-    res.send("This is the notes page");
-})
-
-
 //exporting my router to use it in the another file
 module.exports = router;
