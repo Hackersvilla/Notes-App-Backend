@@ -31,7 +31,7 @@ mongoose.connect("mongodb+srv://Harvinder:8077385872@cluster0.peuae.mongodb.net/
     app.get('/', function(req, res) {
         //sending the request to the user or
         //showing the result when user enter the website
-        const response = {message: "Api Works"}
+        const response = {statuscode: res.statusCode,message: "Api Works"}
         res.json(response);
     });
 
