@@ -9,7 +9,7 @@ const Note = require('./../Models/note');
 //making the list
 router.post('/list', async function(req, res) {
 
-    var notes = await Note.find()
+    var notes = await Note.find({id: req.body.id})
     res.json(notes);
 })
 
